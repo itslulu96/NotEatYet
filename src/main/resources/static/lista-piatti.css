@@ -1,0 +1,218 @@
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
+body {
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+}
+*/
+
+ol {
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  width: 50%;
+  margin: auto;
+}
+
+ol a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #c9f1f8;
+  color: rgb(0, 0, 0);
+  text-decoration: none !important;
+  border-radius: .3em;
+  transition: .3s ease-out;
+}
+
+ol a:hover { background: #9deaf8; color: black;}
+ol a:hover:before { transform: rotate(360deg); }
+ol a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: rgb(255, 183, 3);
+  height: 2em;
+  width: 2em;
+  line-height: 1.5em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+   font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+}
+
+.tag {
+  display: block;
+  float: right;
+  width: auto;
+  height: 18px;
+  
+  background-color: rgb(251, 197, 95);
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
+  
+  border-left: 1px solid rgb(251, 197, 95);
+
+  /* This makes room for the triangle */
+  margin-left: 19px;
+  
+  position: relative;
+  
+  color: black;
+  font-weight: 300;
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+  line-height: 18px;
+
+  padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.tag:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 9px solid rgb(251, 197, 95);
+}
+
+/* Makes the circle */
+.tag:after {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: 7px;
+}
+
+.plus-button {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position: relative;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+  background-color: rgb(251, 197, 95);
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(253, 174, 28);
+  border-bottom-color: rgb(253, 174, 28);
+  border-left-color: rgb(253, 174, 28);
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+}
+
+.plus-button:active {
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(251, 197, 95);
+  border-bottom-color: rgb(251, 197, 95);
+  border-left-color: rgb(253, 174, 28);
+}
+
+.plus-button:hover {
+  transform: scale(1.1) perspective(1px)
+}
+
+.btn-eliminaPiatto {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+  background-color: rgb(251, 197, 95);
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(253, 174, 28);
+  border-bottom-color: rgb(253, 174, 28);
+  border-left-color: rgb(253, 174, 28);
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+  float: left center;
+}
+
+.btn-eliminaPiatto:active {
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(251, 197, 95);
+  border-bottom-color: rgb(251, 197, 95);
+  border-left-color: rgb(253, 174, 28);
+}
+
+.btn-eliminaPiatto:hover {
+  transform: scale(1.1) perspective(1px)
+}
+
+.btn-modificaPiatto {
+  border-radius: 30px;
+  height: 25px;
+  width: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+  background-color: rgb(251, 197, 95);
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(253, 174, 28);
+  border-bottom-color: rgb(253, 174, 28);
+  border-left-color: rgb(253, 174, 28);
+   font-family: 'Noto Sans Mono', monospace;
+  font-size: small;
+  float: left center;
+  }
+  
+.btn-modificaPiatto:active {
+  border-top-color: rgb(253, 174, 28);
+  border-right-color: rgb(251, 197, 95);
+  border-bottom-color: rgb(251, 197, 95);
+  border-left-color: rgb(253, 174, 28);
+}
+  
+.btn-modificaPiatto:hover {
+  transform: scale(1.1) perspective(1px)
+}
+
+.box{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 10px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 60%;
+  }
+  .buttonRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    margin-left: -10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    }

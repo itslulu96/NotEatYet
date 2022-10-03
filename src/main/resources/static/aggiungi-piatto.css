@@ -1,0 +1,25 @@
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightseagreen;
+    }
+    
+    .link-bar {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    }
+
+    .link-left {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    h1 {
+        text-align: center;
+    }

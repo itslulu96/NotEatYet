@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi ristorante</title>
+    <script src="jquery3.6.0.min.js"></script>
+    <script src="classi.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">   
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid px-0">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 px-0">
+			<a class="navbar-brand" href="#"><strong><i>NotEatYet</i></strong></a>
+			<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><img src="immagini/Raviolo.png" alt="logo" width="40px" height="40px"></a>
+					</li>
+					<li class="nav-item right">
+						<a class="nav-link" href="login.html">Login</a>
+					</li>
+					<li class="nav-item home">
+						<a class="nav-link" href="http://localhost:8080/">Home</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+    <div class="container card-0 justify-content-center ">
+        <div class="card-body px-sm-4 px-0">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-10 col"><h3 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Inserisci i tuoi dati </h3><p class="mt-md-4  ml-md-0 ml-2 text-center text-sm-left"> Dopo la compilazione del form verrai reindirizzato al tuo pannello di controllo.</p></div>
+            </div>
+            <div class="row justify-content-center round">
+                <div class="col-lg-10 col-md-12 ">
+                    <div class="card shadow-lg card-1">
+                        <div class="card-body inner-card">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
+                                	<div class="form-group"><label for="email">Email</label><input type="text" class="form-control" id="emailAggiungi" name="email" placeholder="Indirizzo email" required="required"> </div>
+                                    <div class="form-group"> <label for="password">Password</label> <input type="password" class="form-control" id="passwordAggiungi" name="password" placeholder="Inserire password" required="required"> </div>
+                                    <div class="form-group"><label for="ragione_sociale">Ragione sociale</label><input type="text" class="form-control" id="ragioneSocialeAggiungi" name="ragione_sociale" placeholder="Ragione sociale" required="required"> </div>
+                                    <div class="form-group"> <label for="regione">Regione</label> <input type="text" class="form-control" id="regioneAggiungi" name="regione" placeholder="Regione" required="required"> </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-sm-12">
+                                <div class="form-group"> <label for="via">Via</label> <input type="text" class="form-control" id="viaAggiungi" name="via" placeholder="Via" required="required">  </div>
+                                    <div class="form-group"> <label for="partita_iva">Partita IVA</label> <input type="text" id="pIvaAggiungi" name="partita_iva" placeholder="Partita iva" required="required" class="form-control"> </div>
+                                    <div class="form-group"> <label for="citta">Città</label>  <input type="text" class="form-control" id="cittaAggiungi" name="citta" placeholder="Città" required="required"> </div>
+                                    <div class="form-group"> <label for="n_civico">N. civico</label> <input type="number" class="form-control" id="nCivicoAggiungi" name="n_civico" placeholder="Numero civico" required="required" min="1"> </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="row justify-content-end mb-5">
+                                        <input type="button" class="btn btn-primary btn-block" id="conferma-aggiunta" value="Conferma"> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+</body>
+</html>

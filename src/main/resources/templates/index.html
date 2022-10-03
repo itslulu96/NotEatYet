@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gestionale NotEatYet</title>
+<script src="jquery3.6.0.min.js"></script>
+<script src="classi.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav-bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid px-0">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 px-0">
+			<a class="navbar-brand" href="/"><strong><i>NotEatYet</i></strong></a>
+			<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><img src="immagini/Raviolo.png" alt="logo" width="40px" height="40px"></a>
+					</li>
+					<li class="nav-item right">
+						<a class="nav-link" href="login.html">Login</a>
+					</li>
+					<li class="nav-item active home">
+						<a class="nav-link" href="aggiungiRistorante.html">Sign-up</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+
+	<div class="slide-left">
+		<h1>Unisciti a NotEatYet!</h1>
+		<h2 id="persuasione">Non te ne pentirai!</h2>
+		<div class="unisciti">
+			<p>Vuoi unirti ai nostri ristoranti partner?</p>
+			<p>Allora cosa aspetti? Compila il form cliccando sul bottone qua sotto</p>
+	 	</div>
+	</div>
+	<div class="centered">
+		<input class="lgbtn green" type="button" id="form" value="Join us" onclick="location.href='aggiungiRistorante.html'">
+	</div>
+		<h2 id="partner" class="slide-right">Ristoranti partner</h2>
+		<div id="elenco-ristoranti" class="box"></div>
+	
+</body>
+</html>

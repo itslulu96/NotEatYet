@@ -1,0 +1,165 @@
+/*Index*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*per spostare il bottone aumenta/diminuisci le percentuali*/
+/*Index*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*per spostare il bottone aumenta/diminuisci le percentuali*/
+/*bottone Join us*/
+.centered {
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    visibility: hidden;
+    animation: hideAnimation 0s ease-in 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+    to {
+      visibility: visible;
+      width: 0;
+      height: 0;
+    }
+  }
+
+.lgbtn {
+  border-radius: 5px;
+  padding: 15px 55px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 70px;
+  margin-left: 20px;
+  background-color: #2ec4b6;
+  color: #fff;
+  border-color: #2ec4b6;
+  position: relative;
+  display: inline-block;
+}
+.lgbtn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+.green {
+  background-color: #2ec4b6;
+  box-shadow: 3px 5px 5px #888888;
+  border-radius: 2px;
+  transition: all .5s ease-in-out;
+}
+.green:hover {
+  background-color: #ff9f1c;
+  color:#fff;
+  border-color: #ff9f1c;
+  padding: 20px 60px;
+  transform: scale(1.1);
+}
+
+/*Div iniziale*/
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left h1 {
+  animation: slide-left 3s;
+}
+
+#persuasione {
+    animation: slide-left 4s;
+}
+
+.unisciti {
+    animation: slide-left 5s;
+    margin-top: 40px;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.slide-left {
+    text-align: center;
+}
+
+div.slide-left h1 {
+    font-size: 50pt;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+div.slide-left h2 {
+    font-size: 30pt;
+}
+
+/*div dei ristoranti partner*/
+/*posizione del div ristoranti*/
+
+.slide-right {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    animation: slide-right 5s;
+}
+
+@keyframes slide-right {
+    from {
+      margin-right: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+h3{ 
+     font-family: 'Josefin Sans', sans-serif;
+}
+.box{
+    padding:60px 0px;
+    
+}
+
+.box-part{
+    background:#ffbf69;
+    color: #FFFFFF;
+    font-size: 14pt;
+    padding:60px 10px;
+    margin:30px 0px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.box-part:hover{
+    background:#cbf3f0;
+}
+
+.box-part:hover .title , 
+.box-part:hover .text {
+    color:#000000;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.text{
+    margin:20px 0px;
+}
+
+.col-lg-4{
+	margin: auto;
+}
